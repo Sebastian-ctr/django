@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block tittle %}
+{{ tittle }}
+{% endblock %}
+
+{% block page%}
+<div>
+    <h1>{{ tittle }} </h1>
+<div>
+    <h2>{{instance.tittle}}</h2><br>
+    {{instance.content}}<br>
+    {{instance.update}}<br>
+    {{instance.timestamp}}<br> 
+    {{instance.id}} 
+</div>
+</div>
+{% endblock %}

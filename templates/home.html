@@ -6,6 +6,16 @@
 
 {% block page %}
 <div>
-    <p> this is {{ tittle }} page </p>
+    <h1> this is <b>{{ tittle }}</b> page </h1>
+    <p>
+        {% for obj in object_list %}
+
+        {{obj.tittle}}<br>
+        {{obj.content}}<br>
+        {{obj.update}}<br>
+        {{obj.timestamp}}<br>
+
+        {% endfor %}
+    </p>
 </div>
 {% endblock %}
