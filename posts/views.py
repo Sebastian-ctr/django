@@ -13,8 +13,8 @@ def post_home(request):
     }
     return render(request, 'home.html', context)
 
-def post_detail(request):
-    instance = get_object_or_404(Post, id=1)
+def post_detail(request, id=None):
+    instance = get_object_or_404(Post, id=id)
     context = {
         "tittle": instance.tittle,
         "instance": instance
