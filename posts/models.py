@@ -11,4 +11,7 @@ class Post(models.Model):
     def __str__(self):
         return self.tittle
 
+
+    def get_absolute_ur(self):
+        return "/posts/%s/"%(self.id)
     
